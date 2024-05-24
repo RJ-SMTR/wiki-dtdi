@@ -1,0 +1,74 @@
+site_name: Diretoria de Dados e Inovação - SMTR
+# site_url: https://rj-smtr.github.io/pipelines-docs/
+
+theme:
+  name: material
+  logo: img/smtr_logo.png
+  font:
+    text: Roboto
+    code: Roboto Mono
+  palette:
+    - scheme: default
+      primary: custom
+      toggle:
+        icon: material/lightbulb
+        name: Mudar para tema escuro
+    - scheme: slate
+      toggle:
+        icon: material/lightbulb-outline
+        name: Mudar para tema claro
+
+nav:
+  - <i>Hello world</i> 🚏: index.md
+  - Equipe: team.md
+  - Data lake: dados/index.md
+  - Infraestrutura (DevOps): devops/index.md
+  - Sistemas e aplicações: devs/index.md
+  # - Engenharia de Dados: data-eng/index.md
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.arithmatex:
+      generic: true
+extra:
+  version:
+    provider: mike
+
+extra_javascript:
+  - javascripts/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+- css/custom.css
+  
+
+# theme:
+#   name: material
+#   features:
+#     # - navigation.instant
+#     # - navigation.sections
+#     - header.autohide
+#     - navigation.sections
+#     - navigation.top
+#     - toc.integrate
+#     # - navigation.tabs
+#   language: pt
+#   palette:
+#     - media: "(prefers-color-scheme: light)"
+#       primary: "blue"
+#       scheme: default
+#       toggle:
+#         icon: material/toggle-switch-off-outline
+#         name: Switch to dark mode
+#     - media: "(prefers-color-scheme: dark)"
+#       primary: "blue"
+#       scheme: slate
+#       toggle:
+#         icon: material/toggle-switch
+#         name: Switch to light mode
