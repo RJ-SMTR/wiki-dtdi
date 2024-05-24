@@ -1,0 +1,873 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../dados/">
+      
+      
+        <link rel="next" href="../devs/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.24">
+    
+    
+      
+        <title>Infraestrutura (DevOps) - Diretoria de Dados e Inovação - SMTR</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6543a935.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/custom.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#o-que-e-devops" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Diretoria de Dados e Inovação - SMTR" class="md-header__button md-logo" aria-label="Diretoria de Dados e Inovação - SMTR" data-md-component="logo">
+      
+  <img src="../img/smtr_logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Diretoria de Dados e Inovação - SMTR
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Infraestrutura (DevOps)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="Mudar para tema escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mudar para tema escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Mudar para tema claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mudar para tema claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Diretoria de Dados e Inovação - SMTR" class="md-nav__button md-logo" aria-label="Diretoria de Dados e Inovação - SMTR" data-md-component="logo">
+      
+  <img src="../img/smtr_logo.png" alt="logo">
+
+    </a>
+    Diretoria de Dados e Inovação - SMTR
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    <i>Hello world</i> 🚏
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../team/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Equipe
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dados/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data lake
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Infraestrutura (DevOps)
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Infraestrutura (DevOps)
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#o-que-e-devops" class="md-nav__link">
+    <span class="md-ellipsis">
+      O que é DevOps?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#infraestrutura-de-cloud-da-smtr" class="md-nav__link">
+    <span class="md-ellipsis">
+      Infraestrutura de Cloud da SMTR
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Infraestrutura de Cloud da SMTR">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#clusters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clusters
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Clusters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rj-smtr-dev" class="md-nav__link">
+    <span class="md-ellipsis">
+      rj-smtr-dev
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rj-smtr-gke" class="md-nav__link">
+    <span class="md-ellipsis">
+      rj-smtr-gke
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="rj-smtr-gke">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prefect" class="md-nav__link">
+    <span class="md-ellipsis">
+      prefect
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#redis" class="md-nav__link">
+    <span class="md-ellipsis">
+      redis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rj-smtr" class="md-nav__link">
+    <span class="md-ellipsis">
+      rj-smtr
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="rj-smtr">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mobilidade-rio-api-staging-e-producao" class="md-nav__link">
+    <span class="md-ellipsis">
+      mobilidade-rio-api (staging e produção)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mobilidade-rio-app-staging-e-producao" class="md-nav__link">
+    <span class="md-ellipsis">
+      mobilidade-rio-app (staging e produção)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-tools-api-e-data-tools-ui-staging-e-producao" class="md-nav__link">
+    <span class="md-ellipsis">
+      data-tools-api e data-tools-ui (staging e produção)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cicd" class="md-nav__link">
+    <span class="md-ellipsis">
+      CI/CD
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CI/CD">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#versionamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Versionamento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deploy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deploy
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#observabilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Observabilidade
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../devs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sistemas e aplicações
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#o-que-e-devops" class="md-nav__link">
+    <span class="md-ellipsis">
+      O que é DevOps?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#infraestrutura-de-cloud-da-smtr" class="md-nav__link">
+    <span class="md-ellipsis">
+      Infraestrutura de Cloud da SMTR
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Infraestrutura de Cloud da SMTR">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#clusters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clusters
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Clusters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rj-smtr-dev" class="md-nav__link">
+    <span class="md-ellipsis">
+      rj-smtr-dev
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rj-smtr-gke" class="md-nav__link">
+    <span class="md-ellipsis">
+      rj-smtr-gke
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="rj-smtr-gke">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prefect" class="md-nav__link">
+    <span class="md-ellipsis">
+      prefect
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#redis" class="md-nav__link">
+    <span class="md-ellipsis">
+      redis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rj-smtr" class="md-nav__link">
+    <span class="md-ellipsis">
+      rj-smtr
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="rj-smtr">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mobilidade-rio-api-staging-e-producao" class="md-nav__link">
+    <span class="md-ellipsis">
+      mobilidade-rio-api (staging e produção)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mobilidade-rio-app-staging-e-producao" class="md-nav__link">
+    <span class="md-ellipsis">
+      mobilidade-rio-app (staging e produção)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-tools-api-e-data-tools-ui-staging-e-producao" class="md-nav__link">
+    <span class="md-ellipsis">
+      data-tools-api e data-tools-ui (staging e produção)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cicd" class="md-nav__link">
+    <span class="md-ellipsis">
+      CI/CD
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CI/CD">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#versionamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Versionamento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deploy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deploy
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#observabilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Observabilidade
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Infraestrutura (DevOps)</h1>
+
+<h2 id="o-que-e-devops">O que é DevOps?</h2>
+<p>O termo <em>DevOps</em> é a contração e junção dos termos <em>development</em> (dev) e <em>operations</em> (ops). É um conjunto de práticas que visa reduzir o ciclo de entregas das equipes de desenvolvimento por meio de automações de  tarefas recorrentes (como compilação e deploy) e padronização de ambientes .</p>
+<p>Na SMTR, a equipe de <em>DevOps</em> é responsável pela configuração dos contêineres onde rodam as aplicações, da infraestrutura de Cloud, pelos processos entrega e integração contínua (CI/CD) e observabilidade. </p>
+<h2 id="infraestrutura-de-cloud-da-smtr">Infraestrutura de Cloud da SMTR</h2>
+<p>A infraestrutura de Cloud da SMTR está hospedada na Google Cloud Platform (GCP), e pode ser acessada por meio deste link:
+<a href="https://console.cloud.google.com/">https://console.cloud.google.com/</a></p>
+<h3 id="clusters">Clusters</h3>
+<p>O ambiente de produção <strong>rj-smtr</strong> possui três clusters:</p>
+<ul>
+<li><strong>rj-smtr-dev</strong>: ambiente de desenvolvimento</li>
+<li><strong>rj-smtr-gke</strong>: ambiente de produção onde são executadas as <em>pipelines</em> de dados</li>
+<li><strong>rj-smtr</strong>: ambiente de produção onde são executadas as demais aplicações</li>
+</ul>
+<h4 id="rj-smtr-dev">rj-smtr-dev</h4>
+<p>O ambiente de desenvolvimento é completamente separado dos ambientes de produção. Desta forma, evita-se tanto conflito de dependências, quanto disputa por recursos.</p>
+<h4 id="rj-smtr-gke">rj-smtr-gke</h4>
+<p>Existem dois <em>pods</em> neste <em>cluster</em>:</p>
+<ul>
+<li>prefect</li>
+<li>redis</li>
+</ul>
+<h5 id="prefect">prefect</h5>
+<p>O <em>pod prefect</em> é <em>pod</em> que executa as <em>pipelines</em> de dados, por exemplo:</p>
+<ul>
+<li>captura de dados minuto a minuto;</li>
+<li>captura de dados hora em hora;</li>
+<li>materialização de tabela;</li>
+<li>consolidação de dados diária.</li>
+</ul>
+<p>As <em>pipelines</em> são controladas por meio do <a href="https://www.prefect.io/">Prefect</a>, seu código pode ser encontrado <a href="https://github.com/prefeitura-rio/pipelines">neste repositório</a> e sua documentação <a href="https://docs.dados.rio/guia-desenvolvedores/visao-geral-infra/#introducao-ao-fluxo-de-dados">neste link</a>.</p>
+<h5 id="redis">redis</h5>
+<p>Paralelamente ao <em>Prefect</em> que executa as <em>pipelines</em>, é executado o banco de dados em memória <em>redis</em>. Se faz necessário usar tal tecnologia para cache. A quantidade de dados adquirida momento-a-momento pela <em>pipeline</em> é muito grande. Escrever os dados na <em>GCP</em> em tempo real eleva muito os custos. Então, faz-se o cache no <em>redis</em> e escreve-se os dados de minuto em minuto, hora em hora, e até em consolidações diárias.</p>
+<h4 id="rj-smtr">rj-smtr</h4>
+<p>Neste <em>cluster</em> existem duas aplicações com seus respectivos <em>front-ends</em> e <em>back-ends</em>, e ambientes de <em>staging</em> e produção.</p>
+<h5 id="mobilidade-rio-api-staging-e-producao">mobilidade-rio-api (staging e produção)</h5>
+<p>É o pod que contém a API responsável pelo <em>back-end</em> do <em>app</em> <a href="https://mobilidade.rio/">https://mobilidade.rio/</a></p>
+<p>A API é escrita em <strong>Django</strong> e seu repositório pode ser acessado <a href="https://github.com/RJ-SMTR/mobilidade-rio-api">aqui</a>.</p>
+<p>O ambiente de <em>staging</em> está contido no <em>namespace</em> <strong>mobilidade-v2-staging</strong> e pode ser acessado em <a href="https://api.staging.mobilidade.rio/">https://api.staging.mobilidade.rio/</a></p>
+<p>O ambiente de produção está contido no <em>namespace</em> <strong>mobilidade-v2</strong> e pode ser acessado em <a href="https://api.mobilidade.rio/">https://api.mobilidade.rio/</a></p>
+<h5 id="mobilidade-rio-app-staging-e-producao">mobilidade-rio-app (staging e produção)</h5>
+<p>É o pod que contém o <em>front-end</em> do <em>app</em> <a href="https://mobilidade.rio/">https://mobilidade.rio/</a></p>
+<p>A interface de usuário é escrita em <strong>React</strong> e seu repositório pode ser acessado <a href="https://github.com/RJ-SMTR/mobilidade-rio-app">aqui</a>.</p>
+<p>O ambiente de <em>staging</em> também está contido no <em>namespace</em> <strong>mobilidade-v2-staging</strong> e pode ser acessado em <a href="https://app.staging.mobilidade.rio/">https://app.staging.mobilidade.rio/</a></p>
+<p>O ambiente de produção também está contido no <em>namespace</em> <strong>mobilidade-v2</strong> e pode ser acessado em <a href="https://mobilidade.rio/">https://mobilidade.rio/</a></p>
+<h5 id="data-tools-api-e-data-tools-ui-staging-e-producao">data-tools-api e data-tools-ui (staging e produção)</h5>
+<p>Tanto o <em>back-end</em> quanto o <em>front-end</em> utilizam a ferramenta <strong>IBI Transit Data Tools</strong>, sua documentação pode ser encontrada <a href="https://data-tools-docs.ibi-transit.com/en/latest/">aqui</a>.</p>
+<p>Os repositórios estão acessíveis em:</p>
+<ul>
+<li><a href="https://github.com/RJ-SMTR/sigmob-api">https://github.com/RJ-SMTR/sigmob-api</a> (API)</li>
+<li><a href="https://github.com/RJ-SMTR/sigmob-app">https://github.com/RJ-SMTR/sigmob-app</a> (interface de usuário)</li>
+</ul>
+<p>O ambiente de <em>staging</em> utiliza o <em>namespace</em> <strong>gtfs-editor-staging</strong> e é acessível em <a href="https://gtfs-editor.staging.mobilidade.rio/">https://gtfs-editor.staging.mobilidade.rio/</a></p>
+<p>O ambiente de produção utiliza o <em>namespace</em> <strong>gtfs-editor</strong> e é acessível em <a href="https://gtfs-editor.mobilidade.rio/">https://gtfs-editor.mobilidade.rio/</a></p>
+<h2 id="cicd">CI/CD</h2>
+<h3 id="versionamento">Versionamento</h3>
+<p>Todos os projetos são versionados com a ferramenta <em>Git</em>, hospedados no <em>Github</em> e podem ser encontrados nos seguintes perfis:</p>
+<ul>
+<li><a href="https://github.com/RJ-SMTR">Secretaria de Transportes do Rio de Janeiro</a></li>
+<li><a href="https://github.com/prefeitura-rio/">Prefeitura do Rio de Janeiro</a></li>
+</ul>
+<h3 id="deploy">Deploy</h3>
+<p>Os processos de <em>deploy</em> são feitos por meio da ferramenta <em>Github Actions</em>. No <em>Github Actions</em>, o <em>deploy</em> é acionado por meio de um gatilho. Sempre que um <em>commit</em> é feito em uma <em>branch</em> que possua um processo de <em>deploy</em> configurado, um <em>script</em> de <em>workflow</em> é executado.</p>
+<p>O <em>script</em> de <em>workflow</em> configura e executa diversas tarefas, como, por exemplo:</p>
+<ul>
+<li>definição de variáveis de ambiente;</li>
+<li>compilação de contêineres e upload das imagens para a nuvem;</li>
+<li>instalação de dependências e certificados;</li>
+<li>execução de testes unitários;</li>
+<li>execução de scripts necessários para inicialização;</li>
+<li>compilação e execução da aplicação;</li>
+<li>demais etapas de configuração que se fizerem necessárias.</li>
+</ul>
+<p>Ao fim, se todas as etapas ocorreram sem nenhum problema, a nova versão entra em execução.</p>
+<p>A documentação do <em>Github Actions</em> pode ser encontrada <a href="https://docs.github.com/en/actions">neste link</a>.</p>
+<h2 id="observabilidade">Observabilidade</h2>
+<p>No momento, o projeto observabilidade está sendo desenvolvido. Por enquanto, há duas ferramentas em funcionamento para observabilidade.</p>
+<ul>
+<li>Monitor de <em>uptime</em> de diversos serviços que são executados na nuvem: <a href="https://uptime.mobilidade.rio/status/monitor">https://uptime.mobilidade.rio/status/monitor</a></li>
+<li>Alertas de <em>uptime</em>: a todo o momento as aplicações são testadas com <em>webhooks</em>, conforme seu comportamento muda, alertas são emitidos no canal do <em>Discord</em> da SMTR.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.081f42fc.min.js"></script>
+      
+        <script src="../javascripts/config.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
